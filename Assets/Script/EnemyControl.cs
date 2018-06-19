@@ -12,7 +12,6 @@ public class EnemyControl : MonoBehaviour {
 		GameObject gameDirector;
 	// Use this for initialization
 	void Start () {
-		gameDirector = GetComponent<GameDirector>();
 		enemy.init(3);
 		enemy.coe[0] = 1;
 		enemy.coe[1] = 2;
@@ -22,7 +21,7 @@ public class EnemyControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(delta>span){
-			damaged();
+			GetComponent<GameDirector>().damaged();
 		}
 		delta += Time.deltaTime;
 	}
