@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\EnemyControl.cs" />
+     <Compile Include="Assets\Script\Equation.cs" />
      <Compile Include="Assets\Script\GameDirector.cs" />
      <Compile Include="Assets\Script\Math.cs" />
  <Reference Include="UnityEngine.UI">
